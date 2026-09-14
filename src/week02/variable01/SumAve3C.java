@@ -1,4 +1,4 @@
-package week02;
+package week02.variable01;
 
 public class SumAve3C {
     public static void main(String[] args) {
