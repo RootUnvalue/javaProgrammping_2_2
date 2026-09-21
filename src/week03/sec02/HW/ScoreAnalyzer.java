@@ -1,4 +1,4 @@
-package week03.sec02;
+package week03.sec02.HW;
 
 import java.util.Scanner;
 
@@ -18,11 +18,9 @@ public class ScoreAnalyzer {
         System.out.println("---".repeat(4));
     }
 
-    static int selMenu() {
+    static char selMenu() {
         System.out.print("선택> ");
-        int sel = scanner.nextInt();
-        System.out.println("");
-        return sel;
+        return scanner.next().charAt(0);
     }
 
     static void setScores() {
@@ -57,11 +55,11 @@ public class ScoreAnalyzer {
         while (true) {
             printMenu();
             switch (selMenu()) {
-                case 1 -> setStudentNum();
-                case 2 -> setScores();
-                case 3 -> printScores();
-                case 4 -> analyze();
-                case 5 -> {
+                case '1' -> setStudentNum();
+                case '2' -> setScores();
+                case '3' -> printScores();
+                case '4' -> analyze();
+                case '5' -> {
                     System.out.println("명령종료");
                     System.exit(0);
                 }
