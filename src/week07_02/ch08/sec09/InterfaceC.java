@@ -1,0 +1,8 @@
+package week07_02.ch08.sec09;
+
+public interface InterfaceC extends InterfaceA,  InterfaceB {
+
+    // abstract method
+    void methodC();
+
+}

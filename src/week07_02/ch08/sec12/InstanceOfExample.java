@@ -1,0 +1,27 @@
+package week07_02.ch08.sec12;
+
+public class InstanceOfExample {
+    public static void main(String[] args) {
+        Taxi taxi = new Taxi();
+        Bus bus = new Bus();
+
+        ride(taxi);
+        System.out.println();
+        ride(bus);
+    }
+
+    static void ride(Vehicle vehicle) {
+        // method 1
+        if (vehicle instanceof Bus) {
+            Bus bus = (Bus) vehicle;
+            bus.checkFare();
+        }
+
+        // method 2
+        if (vehicle instanceof Bus bus) {
+            bus.checkFare();
+        }
+
+        vehicle.run();
+    }
+}

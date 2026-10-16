@@ -1,0 +1,7 @@
+package week07_02.ch08.sec11.exam01;
+
+public interface Tire {
+
+    // abstract method
+    void roll();
+}
